@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.5",
-    "@kadira/storybook": "^2.21.0"
+    "@kadira/storybook": "^2.21.0",
+    "eslint": "^3.14.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "react-scripts": "0.8.5"
   },
   "dependencies": {
+    "eslint-config-standard-react": "^4.2.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-orm": "^0.9.0-rc.3"
   },
   "scripts": {
     "start": "react-scripts start",
