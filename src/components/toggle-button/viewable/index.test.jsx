@@ -25,8 +25,8 @@ test('viewable', function onTest () {
   expect(Object.keys(viewable)).toMatchSnapshot()
 })
 
-
 test('viewable.view update interaction', function onTest () {
+  // @TODO: think about implementing a helper for the dispatch proxy.
   let dispatchProxy = null
 
   function dispatch (data) {
@@ -55,6 +55,5 @@ test('viewable.view update interaction', function onTest () {
   const viewable = Viewable({model})
   const ReactView = viewable.view
   const wrapper = mount(<ReactView active={false} />)
-  // @TODO: continue here.
   expect(wrapper.simulate('click').html()).toMatchSnapshot()
 })

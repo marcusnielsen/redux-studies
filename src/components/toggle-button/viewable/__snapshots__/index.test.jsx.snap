@@ -1,6 +1,5 @@
 exports[`test viewable 1`] = `
 Array [
-  "dispatch",
   "actionTypes",
   "actions",
   "rootReducer",
@@ -13,4 +12,4 @@ Array [
 ]
 `;
 
-exports[`test viewable.view update interaction 1`] = `"<div>true</div>"`;
+exports[`test viewable.view update interaction 1`] = `"<div>false</div>"`;

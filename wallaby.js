@@ -16,10 +16,15 @@ module.exports = function (wallaby) {
   return {
     files: [
       'src/**/*.js',
-      '!src/**/*.test.js'
+      'src/**/*.jsx',
+      '!src/**/*.test.js',
+      '!src/**/*.test.jsx'
     ],
 
-    tests: ['src/**/*.test.js'],
+    tests: [
+      'src/**/*.test.js',
+      'src/**/*.test.jsx'
+    ],
 
     env: {
       type: 'node',
@@ -27,6 +32,10 @@ module.exports = function (wallaby) {
     },
 
     compilers: {
+      '**/*.jsx': wallaby.compilers.babel({
+        babel: require('babel-core'),
+        presets: ['react-app']
+      }),
       '**/*.js': wallaby.compilers.babel({
         babel: require('babel-core'),
         presets: ['react-app']

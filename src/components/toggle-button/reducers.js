@@ -4,17 +4,9 @@ export function update (state, {active}) {
 
 export default function create ({initialState}) {
   function rootReducer (state, action) {
-    state = state || initialState
-    // @TODO: Put in parent instead
-    // const reduceMatched = (
-    //   entity === action.entity &&
-    //   id === action.id &&
-    //   field === action.field
-    // )
-
-    // if (!reduceMatched) {
-    //   return state
-    // }
+    if (typeof state === 'undefined') {
+      return initialState
+    }
 
     switch (action.type) {
       case 'update':
