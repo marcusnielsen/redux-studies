@@ -1,0 +1,17 @@
+exports[`test actions initial state 1`] = `
+Array [
+  "update",
+]
+`;
+
+exports[`test actions.update 1`] = `
+Object {
+  "entity": "b",
+  "field": "d",
+  "id": "c",
+  "payload": Object {
+    "active": true,
+  },
+  "type": "update",
+}
+`;
