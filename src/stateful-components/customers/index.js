@@ -4,20 +4,17 @@ export default class component extends React.Component {
   render () {
     const reload = this.props.reload
     const customers = this.props.customers
-    // @TODO: Implement
     const selectedId = this.props.selectedId
     const selectId = this.props.selectId
 
     return (
       <div>
+        <h3>Customers</h3>
         <button onClick={reload}>Reload</button>
         {Object.keys(customers.byId).map((key) => (
-          <div key={key} onClick={() => {selectId(key)}}>
+          <div style={selectedId === key ? {backgroundColor: 'goldenrod', color: 'white'} : {}} key={key} onClick={() => {selectId(key)}}>
             <div>id: {
               customers.byId[key].id
-            }</div>
-            <div>name: {
-              customers.byId[key].name
             }</div>
           </div>
         ))}

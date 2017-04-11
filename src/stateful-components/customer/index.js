@@ -7,7 +7,8 @@ export default class component extends React.Component {
     const selectedId = this.props.selectedId
 
     return (
-      <div style={{backgroundColor: 'steelblue', color: 'white'}}>
+      <div style={{backgroundColor: 'black', color: 'white'}}>
+        <h3>Customers</h3>
         <button onClick={reload}>Reload</button>
         {
           <div>

@@ -13,8 +13,15 @@ storiesOf('customers-store', module)
           {({state: {selectedId}, actions: {selectId}}) => {
             return (
               <div>
-                <Customer customers={customers} selectedId={selectedId} reload={reload}/>
-                <Customers customers={customers} selectId={selectId} selectedId={selectedId} reload={reload}/>
+                <Customer
+                  customers={customers}
+                  selectedId={selectedId}
+                  reload={reload} />
+                <Customers
+                  customers={customers}
+                  selectId={selectId}
+                  selectedId={selectedId}
+                  reload={reload} />
               </div>
             )
           }}
