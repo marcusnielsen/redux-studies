@@ -8,7 +8,7 @@ export default class component extends React.Component {
 
     return (
       <div style={{backgroundColor: 'black', color: 'white'}}>
-        <h3>Customers</h3>
+        <h3>Customer</h3>
         <button onClick={reload}>Reload</button>
         {
           <div>
